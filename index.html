@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose an edition of Bread from Dirt / Pão de Terra by Leonel Togniolli.">
+  <meta name="theme-color" content="#0b1113">
+  <link rel="canonical" href="https://ltogniolli.github.io/bread-from-dirt/">
+  <link rel="alternate" hreflang="en" href="https://ltogniolli.github.io/bread-from-dirt/en/">
+  <link rel="alternate" hreflang="pt-BR" href="https://ltogniolli.github.io/bread-from-dirt/pt-br/">
+  <link rel="alternate" hreflang="x-default" href="https://ltogniolli.github.io/bread-from-dirt/">
+  <link rel="icon" href="./assets/brand-mark-64.png" type="image/png">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>Bread from Dirt / Pão de Terra | Leonel Togniolli</title>
+  <script>
+    (() => {
+      let saved = null;
+      try {
+        saved = localStorage.getItem("bread-from-dirt-language");
+      } catch (_error) {
+        // Language detection still works when browser storage is unavailable.
+      }
+      const browser = (navigator.language || "en").toLowerCase();
+      const locale = ["en", "pt-br"].includes(saved)
+        ? saved
+        : (browser.startsWith("pt") ? "pt-br" : "en");
+      window.location.replace(new URL(`./${locale}/`, window.location.href));
+    })();
+  </script>
+</head>
+<body class="language-gate">
+  <main class="gate-card" aria-labelledby="gate-title">
+    <img class="gate-logo" src="./assets/brand-mark-160.webp" alt="" width="160" height="160">
+    <span class="eyebrow">Leonel Togniolli</span>
+    <h1 id="gate-title">Bread from Dirt<br><span>Pão de Terra</span></h1>
+    <p>Choose your language · Escolha seu idioma</p>
+    <nav class="gate-actions" aria-label="Language selection">
+      <a class="button button-primary" href="./en/" hreflang="en">English</a>
+      <a class="button button-secondary" href="./pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a>
+    </nav>
+  </main>
+</body>
+</html>

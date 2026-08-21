@@ -1,0 +1,38 @@
+{
+  "canonicalBase": "https://ltogniolli.github.io/bread-from-dirt/",
+  "gaMeasurementId": "",
+  "locales": {
+    "en": {
+      "downloads": {
+        "epub": "../downloads/bread-from-dirt.epub",
+        "pdf": "../downloads/bread-from-dirt.pdf",
+        "audio": ""
+      },
+      "retailers": {
+        "amazon": "https://www.amazon.com/",
+        "kobo": "",
+        "apple": ""
+      },
+      "author": {
+        "photo": "author-800.webp",
+        "bio": "Leonel Togniolli is a technology executive with more than 26 years of experience who once spent far too long wondering how to explain the arrival of post-scarcity without talking about AI. The result is Bread from Dirt."
+      }
+    },
+    "pt-BR": {
+      "downloads": {
+        "epub": "../downloads/pao-de-terra.epub",
+        "pdf": "../downloads/pao-de-terra.pdf",
+        "audio": ""
+      },
+      "retailers": {
+        "amazon": "https://www.amazon.com.br/",
+        "kobo": "",
+        "apple": ""
+      },
+      "author": {
+        "photo": "author-800.webp",
+        "bio": "Leonel Togniolli é um executivo de tecnologia com mais de 26 anos de carreira que, um dia, passou tempo demais pensando em como explicaria a chegada da pós-escassez sem falar sobre IA. O resultado é Pão de Terra."
+      }
+    }
+  }
+}

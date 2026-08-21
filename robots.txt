@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ltogniolli.github.io/bread-from-dirt/sitemap.xml
