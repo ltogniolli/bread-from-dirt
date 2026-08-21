@@ -185,22 +185,11 @@
     </nav>
   </footer>
 
-  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title">
-    <div>
-      <strong id="consent-title">Help improve this page?</strong>
-      <p>With your permission, Google Analytics measures visits and download clicks. The site works exactly the same if you decline.</p>
-    </div>
-    <div class="consent-actions">
-      <button class="button button-quiet" type="button" data-consent="denied">Decline</button>
-      <button class="button button-primary" type="button" data-consent="granted">Allow analytics</button>
-    </div>
-  </aside>
-
   <dialog class="privacy-dialog" data-privacy-dialog aria-labelledby="privacy-title">
     <button class="dialog-close" type="button" data-close-privacy aria-label="Close privacy information">×</button>
     <p class="eyebrow">Your choice</p>
     <h2 id="privacy-title">Privacy and analytics</h2>
-    <p>This site uses no account, advertising, or download gate. If you allow analytics, Google Analytics receives page-view, language-switch, retailer-click, and download events. Analytics does not load before you consent.</p>
+    <p>This site uses no account, advertising, or download gate. Google Analytics loads by default and receives page-view, language-switch, retailer-click, and download events. You can stop measurement at any time from this panel.</p>
     <p data-analytics-unconfigured>The analytics measurement ID has not been configured, so no analytics is currently active.</p>
     <div class="dialog-actions" data-privacy-actions>
       <button class="button button-quiet" type="button" data-consent="denied">Do not measure</button>
@@ -208,7 +197,7 @@
     </div>
   </dialog>
 
-  <noscript><p class="noscript-note">JavaScript is only used for optional analytics, subtle animation, and configured audiobook or retailer links. EPUB and PDF downloads remain available.</p></noscript>
+  <noscript><p class="noscript-note">JavaScript is used for analytics, subtle animation, and configured audiobook or retailer links. EPUB and PDF downloads remain available.</p></noscript>
   <script type="module" src="../assets/site.js"></script>
 </body>
 </html>

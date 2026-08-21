@@ -203,7 +203,6 @@ function configurePrivacy(measurementId) {
     ? measurementId.trim()
     : "";
 
-  const banner = document.querySelector("[data-consent-banner]");
   const dialog = document.querySelector("[data-privacy-dialog]");
   const unconfigured = document.querySelector("[data-analytics-unconfigured]");
   const privacyActions = document.querySelector("[data-privacy-actions]");
@@ -219,7 +218,6 @@ function configurePrivacy(measurementId) {
   });
 
   if (!analyticsId) {
-    if (banner) banner.hidden = true;
     if (unconfigured) unconfigured.hidden = false;
     if (privacyActions) privacyActions.hidden = true;
     return;
@@ -229,14 +227,12 @@ function configurePrivacy(measurementId) {
   if (privacyActions) privacyActions.hidden = false;
 
   const savedConsent = readStorage(CONSENT_KEY);
-  if (savedConsent === "granted") loadAnalytics();
-  else if (savedConsent !== "denied" && banner) banner.hidden = false;
+  if (savedConsent !== "denied") loadAnalytics();
 
   document.querySelectorAll("[data-consent]").forEach((button) => {
     button.addEventListener("click", () => {
       const choice = button.dataset.consent;
       writeStorage(CONSENT_KEY, choice);
-      if (banner) banner.hidden = true;
       hideDialog(dialog);
       if (choice === "granted") loadAnalytics();
       else revokeAnalytics();
