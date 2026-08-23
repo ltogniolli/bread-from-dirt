@@ -11,4 +11,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://breadfromdirt.com/en/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://breadfromdirt.com/pt-br/"/>
   </url>
+  <url>
+    <loc>https://breadfromdirt.com/en/read/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breadfromdirt.com/en/read/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://breadfromdirt.com/pt-br/read/"/>
+  </url>
+  <url>
+    <loc>https://breadfromdirt.com/pt-br/read/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breadfromdirt.com/en/read/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://breadfromdirt.com/pt-br/read/"/>
+  </url>
 </urlset>

@@ -59,6 +59,24 @@ function initializeLanguageLinks() {
   });
 }
 
+function initializeReadingLinks() {
+  document.querySelectorAll("[data-online-reader]").forEach((link) => {
+    link.addEventListener("click", () => {
+      track("online_read_start", { language: documentLocale });
+    });
+  });
+
+  document.querySelectorAll("[data-reader-download]").forEach((link) => {
+    link.addEventListener("click", () => {
+      track("download", {
+        language: documentLocale,
+        format: link.dataset.readerDownload,
+        source: "online_reader",
+      });
+    });
+  });
+}
+
 function resolveConfiguredUrl(value) {
   if (typeof value !== "string" || !value.trim()) return "";
   return new URL(value.trim(), window.location.href).href;
@@ -254,6 +272,7 @@ async function loadConfiguration() {
 async function main() {
   initializeReveals();
   initializeLanguageLinks();
+  initializeReadingLinks();
   document.querySelectorAll("[data-current-year]").forEach((element) => {
     element.textContent = String(new Date().getFullYear());
   });
